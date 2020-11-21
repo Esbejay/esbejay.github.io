@@ -1380,7 +1380,7 @@ button.style3:active,
   min-height: 100%;
   overflow: hidden;
 }
-/*
+
 #banner:before {
   -moz-transition: opacity 2s ease;
   -webkit-transition: opacity 2s ease;
@@ -1396,13 +1396,16 @@ button.style3:active,
   display: block;
   height: 100%;
   left: 0;
-  opacity: 0.45;
+  opacity: 0.01;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: 1;
+
+  background-image: url("../../images/banner.jpg");
+  background-position: center;
 }
-*/
+
 @media screen and (max-width: 1280px) {
   #banner video {
     display: none;
