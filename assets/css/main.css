@@ -1261,7 +1261,7 @@ button.style3:active,
 }
 
 /* Banner */
-
+/*
 #banner {
   -moz-align-items: center;
   -webkit-align-items: center;
@@ -1270,7 +1270,7 @@ button.style3:active,
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
-  display: flex;
+  display: flex; 
   -moz-justify-content: center;
   -webkit-justify-content: center;
   -ms-justify-content: center;
@@ -1285,13 +1285,25 @@ button.style3:active,
   position: relative;
   text-align: center;
   overflow: hidden;
+  z-index: auto;
 }
-
+.inner::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 216px;
+  left: 0px;
+  background-color: rgba(172, 172, 172, .07);
+  z-index: auto;
+}
 
 #banner .inner {
   text-align: center;
   position: relative;
-  z-index: 2;
+  z-index: 1;
+  font-weight: 300;
+
 }
 
 
@@ -1301,43 +1313,98 @@ button.style3:active,
   font-weight: 400;
   font-family: "Passion One", cursive;
   margin: 0;
+  z-index: auto;
+  position: relative;
+}
+*/
+
+
+
+#banner {
+  position: relative; 
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8em 4em 6em 4em;
+  min-height: 70vh;
+  background-repeat: no-repeat;
+  border-top: 0;
+  overflow: hidden;
 }
 
-/*
+.inner::before {    
+    content: "";
+    background-image: url("../../images/banner.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.13;
+    background-position: center;
+
+}
+
+#banner h1 {
+position: relative;
+color: #fff;  
+font-size: 6em;
+font-weight: 400;
+font-family:  "Passion One", cursive;
+margin: 0;
+z-index: 1;
+line-height: 1;
+text-align: center;
+}
+
+#banner p {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.8em;
+  font-weight: 400;
+  z-index:1;
+  text-align: center;
+}
+
+@media screen and (max-width: 1080px) {
+  #banner h1 {
+    font-size: 6em;
+  }
+}
+
 @media screen and (max-width: 980px) {
   #banner h1 {
     font-size: 5em;
   }
 }
-*/
-/*
+
 @media screen and (max-width: 736px) {
   #banner h1 {
-    font-size: 3em;
+    font-size: 3.8em;
   }
 }
-*/
-/*
-#banner p {
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 1.5em;
-  font-weight: 300;
+
+@media screen and (max-width: 1080px) {
+  #banner p {
+    font-size: 1.3em;
+  }
 }
-*/
-/*
+
 @media screen and (max-width: 980px) {
   #banner p {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 }
-*/
-/*
+
+
 @media screen and (max-width: 480px) {
   #banner p {
-    font-size: 1.25em;
+    font-size: 1.2em;
   }
 }
-*/
+
 /*
 #banner a {
   color: rgba(255, 255, 255, 0.75);
@@ -1413,7 +1480,7 @@ button.style3:active,
     min-height: 0;
     padding: 6em 2em 4em 2em;
   }
-*/
+
 /*
   #banner br {
     display: none;
