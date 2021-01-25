@@ -1337,7 +1337,7 @@ button.style3:active,
 
 .inner::before {    
     content: "";
-    background-image: url("/images/banner.jpg");
+    background-image: url("/images/banner.jpeg");
     background-size: cover;
     position: absolute;
     top: 0px;
