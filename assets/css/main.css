@@ -1321,7 +1321,6 @@ button.style3:active,
 
 
 #banner {
-  content: "";
   position: relative; 
   height: 100vh;
   width: 100%;
@@ -1333,6 +1332,7 @@ button.style3:active,
   background-repeat: no-repeat;
   border-top: 0;
   overflow: hidden;
+  z-index: 3;
 }
 
 .inner::before {    
@@ -1346,7 +1346,7 @@ button.style3:active,
     left: 0px;
     opacity: 0.13;
     background-position: center;
-
+    z-index: 1;
 }
 
 #banner h1 {
