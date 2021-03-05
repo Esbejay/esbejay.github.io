@@ -416,6 +416,10 @@ header h6 + p {
 
 /* Box */
 
+#dropdown {
+  display: none;
+}
+
 .thumbnails {
   display: -moz-flex;
   display: -webkit-flex;
